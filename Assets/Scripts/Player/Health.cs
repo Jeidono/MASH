@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -9,13 +11,13 @@ public class Health : MonoBehaviour
     {
         currenthealth = maxHealth;
     }
-    void TakeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         currenthealth -= amount;
 
         if(currenthealth <= 0)
         {
-            //gameover
+               Destroy(gameObject);
         }
     }
     // Update is called once per frame
