@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: 217.99998}
+  m_AnchoredPosition: {x: -312, y: 248.99998}
   m_SizeDelta: {x: 46.51, y: 42.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172385419
@@ -877,7 +877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261.8, y: 217.99998}
+  m_AnchoredPosition: {x: -261.8, y: 248.99998}
   m_SizeDelta: {x: 46.51, y: 42.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754427471
@@ -986,7 +986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212.49998, y: 217.99998}
+  m_AnchoredPosition: {x: -212.49998, y: 248.99998}
   m_SizeDelta: {x: 46.51, y: 42.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878720516
@@ -1294,7 +1294,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3351, y: -0.5, z: -0.027004743}
-  m_LocalScale: {x: 2.976138, y: 2.2288458, z: 1}
+  m_LocalScale: {x: 2.7743258, y: 2.2288458, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 820085133}
@@ -1592,7 +1592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -366, y: 217}
+  m_AnchoredPosition: {x: -366, y: 248}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1557753379
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 1794362501}
   - component: {fileID: 1794362500}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Score
+  m_text: Time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
