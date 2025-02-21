@@ -1,28 +1,36 @@
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 3;
-    public int currenthealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int currentHealth;
+
+    public Image heart1; // Assign these in the Inspector
+    public Image heart2;
+    public Image heart3;
+
     void Start()
     {
-        currenthealth = maxHealth;
+        currentHealth = maxHealth;
+        UpdateHearts();
     }
+
     public void TakeDamage(int amount)
     {
-        currenthealth -= amount;
+        currentHealth -= amount;
+        UpdateHearts();
 
-        if(currenthealth <= 0)
+        if (currentHealth <= 0)
         {
-               Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    void UpdateHearts()
     {
-        
+        heart1.enabled = currentHealth >= 1;
+        heart2.enabled = currentHealth >= 2;
+        heart3.enabled = currentHealth >= 3;
     }
 }

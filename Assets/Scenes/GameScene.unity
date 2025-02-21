@@ -761,7 +761,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  currenthealth: 3
+  currentHealth: 0
+  heart1: {fileID: 172385419}
+  heart2: {fileID: 754427471}
+  heart3: {fileID: 878720516}
 --- !u!1 &437136950
 GameObject:
   m_ObjectHideFlags: 0
