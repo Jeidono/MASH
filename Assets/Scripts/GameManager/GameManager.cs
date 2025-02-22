@@ -16,16 +16,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if either the gameOver or win screen is active
+        
         if (gameOverUi.activeInHierarchy || winScreenUi.activeInHierarchy)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f; 
         }
         else
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = 1f; 
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -51,11 +53,13 @@ public class GameManager : MonoBehaviour
 
     public void restart()
     {
+        Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void mainMenu()
     {
+        Time.timeScale = 1f; 
         SceneManager.LoadScene("MainMenu");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
