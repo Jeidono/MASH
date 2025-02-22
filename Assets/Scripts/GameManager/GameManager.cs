@@ -23,6 +23,12 @@ public class GameManager : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+        if (Input.GetKeyDown(KeyCode.R)){
+            restart();
+        }
+        if (Input.GetKeyDown(KeyCode.Q)){
+            mainMenu();
+        }
     }
     
     public void gameOver()
@@ -33,8 +39,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
     public void mainMenu(){
         SceneManager.LoadScene("MainMenu");
+        {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        }
     }
     public void Quit(){
        Application.Quit();
