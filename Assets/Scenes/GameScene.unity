@@ -680,7 +680,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 343818977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805270873}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &343818977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +994,7 @@ MonoBehaviour:
   heart1: {fileID: 172385419}
   heart2: {fileID: 754427471}
   heart3: {fileID: 878720516}
+  gameManager: {fileID: 805270873}
 --- !u!1 &437136950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +2171,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793891272}
   m_CullTransparentMesh: 1
+--- !u!1 &805270872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805270874}
+  - component: {fileID: 805270873}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &805270873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805270872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a0aff6c017e304c9ee5d8359d2d434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUi: {fileID: 38007132}
+--- !u!4 &805270874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805270872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.50528073, y: 0.01154783, z: -0.2048273}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820085132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,8 +3051,8 @@ Transform:
   m_GameObject: {fileID: 1075175776}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 0.46, z: -0.027004743}
-  m_LocalScale: {x: 2.8040905, y: 2.2288458, z: 1}
+  m_LocalPosition: {x: -0.3893, y: 0.46, z: -0.027004743}
+  m_LocalScale: {x: 2.7794144, y: 2.2288458, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 820085133}
@@ -3174,7 +3232,7 @@ GameObject:
   - component: {fileID: 1291285677}
   - component: {fileID: 1291285676}
   m_Layer: 5
-  m_Name: MainMenuButton
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5208,3 +5266,4 @@ SceneRoots:
   - {fileID: 1060568353}
   - {fileID: 820085133}
   - {fileID: 242810732}
+  - {fileID: 805270874}

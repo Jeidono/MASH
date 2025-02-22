@@ -6,9 +6,13 @@ public class Health : MonoBehaviour
     public int maxHealth = 3;
     public int currentHealth;
 
-    public Image heart1; // Assign these in the Inspector
+    public Image heart1; 
     public Image heart2;
     public Image heart3;
+    public GameManager gameManager;
+    
+    private bool isDead;
+
 
     void Start()
     {
@@ -21,9 +25,11 @@ public class Health : MonoBehaviour
         currentHealth -= amount;
         UpdateHearts();
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
             Destroy(gameObject);
+            gameManager.gameOver();
+            Debug.Log("dead");
         }
     }
 
