@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerCtrl : MonoBehaviour
 {
     public float movSpeed;
+    public AudioSource Pickup;
     private float speedX, speedY;
     private Rigidbody2D rb;
     private bool isFacingRight = true; 
@@ -61,6 +62,7 @@ public class PlayerCtrl : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             honeyCounter++;
+            Pickup.Play();
             UpdateUI();
         }
         else if (collision.CompareTag("Beehive1") || collision.CompareTag("Beehive2"))
