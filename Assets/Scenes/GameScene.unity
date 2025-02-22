@@ -516,6 +516,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 411283454}
+    - target: {fileID: 3402680377217705657, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
+      propertyPath: damageAmount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4963860386678453169, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -870,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 324305866}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.16, y: -3.1082, z: -0.027004743}
+  m_LocalPosition: {x: 5.01, y: -3.1082, z: -0.027004743}
   m_LocalScale: {x: 1.701062, y: 1.5082847, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1357,6 +1361,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 411283454}
+    - target: {fileID: 3402680377217705657, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
+      propertyPath: damageAmount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4963860386678453169, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -3803,6 +3811,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 411283454}
+    - target: {fileID: 3402680377217705657, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
+      propertyPath: damageAmount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4963860386678453169, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -7915,6 +7927,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 411283454}
+    - target: {fileID: 3402680377217705657, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
+      propertyPath: damageAmount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4963860386678453169, guid: a32b839aeca10dd40b5d151b06681b3d, type: 3}
       propertyPath: m_SortingLayer
       value: -2
