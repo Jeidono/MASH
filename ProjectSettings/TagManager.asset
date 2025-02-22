@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Honey
+  - Base
+  - Beehive1
+  - Beehive2
   layers:
   - Default
   - TransparentFX
