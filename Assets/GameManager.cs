@@ -6,14 +6,25 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverUi;
     void Start()
     {
-        
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(gameOverUi.activeInHierarchy)
+        {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
+    
     public void gameOver()
     {
         gameOverUi.SetActive(true);
