@@ -14,7 +14,7 @@ public class PlayerCtrl : MonoBehaviour
     private int honeyStorage = 0;
     private int totalHoneyCollected = 0;
     private const int maxCarry = 3;
-    private const int winCondition = 1;
+    private const int winCondition = 8;
     private bool isInBase = false;
 
     public TMP_Text counterText;
